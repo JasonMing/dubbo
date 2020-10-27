@@ -23,6 +23,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>dubbo-rpc-api</artifactId>
+    <version>${revision}-fixgeneric</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
     <description>The rpc module of dubbo project</description>

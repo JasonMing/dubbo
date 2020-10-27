@@ -158,7 +158,7 @@
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-dependencies-bom</artifactId>
-                <version>${project.version}</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -369,8 +369,8 @@
                             <excludePackageNames>
                                 org.apache.dubbo.demo,org.apache.dubbo.demo.*
                             </excludePackageNames>
-                            <doctitle>Apache Dubbo ${project.version} API</doctitle>
-                            <windowtitle>Apache Dubbo ${project.version} API</windowtitle>
+                            <doctitle>Apache Dubbo ${revision} API</doctitle>
+                            <windowtitle>Apache Dubbo ${revision} API</windowtitle>
                         </configuration>
                     </plugin>
                     <plugin>
@@ -455,8 +455,8 @@
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
                         <manifestEntries>
-                            <Specification-Version>${project.version}</Specification-Version>
-                            <Implementation-Version>${project.version}</Implementation-Version>
+                            <Specification-Version>${revision}</Specification-Version>
+                            <Implementation-Version>${revision}</Implementation-Version>
                         </manifestEntries>
                     </archive>
                 </configuration>
