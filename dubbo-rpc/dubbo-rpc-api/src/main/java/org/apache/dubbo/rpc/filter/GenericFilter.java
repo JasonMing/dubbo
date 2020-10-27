@@ -71,7 +71,8 @@ public class GenericFilter implements Filter, Filter.Listener {
                     args = new Object[params.length];
                 }
 
-                if (args.length != types.length) {
+                // FIX: [#6728](https://github.com/apache/dubbo/issues/6728)
+                if (types != null && args.length != types.length) {
                     throw new RpcException("args.length != types.length");
                 }
                 String generic = inv.getAttachment(GENERIC_KEY);
